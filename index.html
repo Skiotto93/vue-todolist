@@ -21,7 +21,7 @@
                 <div class="result">
                     <ul>
                         <li v-for="(todo, index) in todoList" v-if="todoList.length > 0">
-                            <span">{{ todo.text }}</span>
+                            <span>{{ todo.text }}</span>
                             <i class="fa-sharp fa-solid fa-xmark" @click="removeTodo(index)"></i>
                         </li>
                         <h3 v-else>Non sono presenti todo</h3>
