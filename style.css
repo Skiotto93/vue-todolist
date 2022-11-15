@@ -1,0 +1,48 @@
+/*---------------
+    RESET
+---------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*---------------
+    BODY
+---------------*/
+.container {
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+}
+#logo {
+    max-width: 500px;
+    margin-top: 30px;
+}
+.info {
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+.btn {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.result {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+.result ul li {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+.textDecLine {
+    text-decoration: line-through;
+}

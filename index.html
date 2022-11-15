@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To do List</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="container">
+                <img id="logo" src="img/logo.png" alt="logo">
+                <form>
+                    <input class="info" type="text" placeholder="Inserisci il testo">
+                    <button class="btn" type="submit">Aggiungi</button>
+                </form>
+                <div class="result">
+                    <ul>
+                        <li>
+                            Comprare pasta
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </li>
+                        <li>
+                            Comprare latte
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </li>
+                        <li>
+                            Comprare pane
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
