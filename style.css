@@ -15,7 +15,7 @@
     max-width: 800px;
 }
 #logo {
-    max-width: 500px;
+    max-width: 300px;
     margin-top: 30px;
 }
 .info {
@@ -34,12 +34,13 @@
 }
 .result {
     margin-top: 30px;
-    background-color: #ddd;
     padding: 20px;
+    background-color: #f3f6f6;
+    border-radius: 10px;
 }
 .result ul li {
     list-style: none;
-    padding: 10px 0;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid grey;

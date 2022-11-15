@@ -11,29 +11,24 @@
     </head>
     <body>
         <div id="app">
+            
             <div class="container">
                 <img id="logo" src="img/logo.png" alt="logo">
-                <form>
-                    <input class="info" type="text" placeholder="Inserisci il testo">
+                <form @submit.prevent="addTodo">
+                    <input class="info" type="text" placeholder="Inserisci il testo" v-model="newTodo" required>
                     <button class="btn" type="submit">Aggiungi</button>
                 </form>
                 <div class="result">
                     <ul>
-                        <li>
-                            Comprare pasta
-                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        <li v-for="(todo, index) in todoList" v-if="todoList.length > 0">
+                            <span">{{ todo.text }}</span>
+                            <i class="fa-sharp fa-solid fa-xmark" @click="removeTodo(index)"></i>
                         </li>
-                        <li>
-                            Comprare latte
-                            <i class="fa-sharp fa-solid fa-xmark"></i>
-                        </li>
-                        <li>
-                            Comprare pane
-                            <i class="fa-sharp fa-solid fa-xmark"></i>
-                        </li>
+                        <h3 v-else>Non sono presenti todo</h3>
                     </ul>
                 </div>
             </div>
+
         </div>
         <script src="script.js"></script>
     </body>
